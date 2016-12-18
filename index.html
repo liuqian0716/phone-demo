@@ -1,9 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>主页</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 <body>
-    aaaa
+<!-- <header class="publicHeader">
+    <div class="head_close fl">
+        X
+    </div>
+    <div class="head_name fl">
+        品新互动微官网
+    </div>
+    <div class="pointAll fr">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header> -->
+<section class="sectionTop">
+    <div>
+        <img src="images/mian_03.gif" />品信互动
+    </div>
+</section>
+<div class="banner">
+    <img src="images/mian_06.gif" alt="">
+</div>
+<section class="content">
+    <div class="contentTop clear">
+        
+        <div class="contentTop_left fl">
+            <a href="javascript:;">
+                <img src="images/mian_09.gif" />
+                <div class="about clear">
+                    <div class="text fl">关于我们</div>
+                    <div class="icon fr"><img src="images/main_3.png" alt="" /></div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- <div class="center fl"></div> -->
+        <div class="contentTop_right fl">
+            <a href="javascript:;">
+                <div class="product">
+                    <div class="proContent">
+                        <img src="images/main_1.png" />产品介绍
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;">
+                <div class="product">
+                    <div class="proContent">
+                        <img src="images/main_2.png" />解决方案
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="contentTop clear">
+        <div class="contentTop_right fl">
+            <a href="javascript:;">
+                <div class="product">
+                    <div class="proContent">
+                        <img src="images/main_4.png" />经典案例
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;">
+                <div class="product">
+                    <div class="proContent">
+                        <img src="images/main_5.png" />招商加盟
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="contentTop_left fl">
+            <a href="javascript:;">
+                <img src="images/mian_13.jpg" />
+                <div class="about clear">
+                    <div class="text fl">微信分销</div>
+                    <div class="icon fr"><img src="images/main_3.png" alt="" /></div>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+    
+</section>
+<footer class="footer">
+    Copyright © 2006-2015 品信互动 版权所有
+</footer>
+
+<script type="text/javascript">
+    fn();
+    window.addEventListener("resize",fn);
+    function fn() {
+        var html = document.querySelector("html");
+        var width = html.getBoundingClientRect().width;
+        html.style.fontSize = width/16 + "px"; //得出来的结果不能小于12 
+    }
+</script>
+<script src="js/index.js" type="text/javascript"></script>
 </body>
 </html>

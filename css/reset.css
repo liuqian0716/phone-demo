@@ -1,0 +1,32 @@
+/* 
+* @Author: anchen
+* @Date:   2016-12-17 13:37:23
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-12-17 13:45:41
+*/
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, form, input, th, td, p, div, b, em, nav, section, footer, span, li, img, a{ margin: 0; padding: 0;}
+
+input,button{
+    -webkit-appearance:none;border-radius:0;
+}
+a,input,button{
+    -webkit-tap-heightlight-color:rgba(0,0,0,0);
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    border:0;
+    vertical-align: top;
+}
+li{
+    list-style:none;
+}
+.clear:after{
+    clear:both;
+    content:"";
+    display:block;
+}
+.fl{float:left;}
+.fr{float:right;}

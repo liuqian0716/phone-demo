@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>关于我们</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+</head>
+<body>
+
+<nav class="nav">
+    <ul>
+        <li><a href="javascript:;" title="">公司介绍</a></li>
+        <li><a href="javaascript:;" title="">联系我们</a></li>
+        <li><a href="javaascript:;" title="">诚聘英才</a></li>
+    </ul>
+</nav>    
+
+<section class="introduce">
+    <div class="banner">
+    
+    </div>
+    <div class="introduce_head">
+        我们的服务<span></span>
+    </div>
+    <div class="introduce_content">
+        <img src="images/关于我们_05.jpg" />
+        <img src="images/关于我们_08.jpg" />
+        <img src="images/关于我们_10.jpg" />
+        <img src="images/关于我们_12.jpg" />
+        <img src="images/关于我们_14.jpg" />
+        <img src="images/关于我们_16.jpg" />
+        <img src="images/关于我们_18.jpg" />
+        <img src="images/关于我们_20.jpg" />
+    </div>
+    <div class="vantage">
+        <div class="introduce_head">
+            我们的优势<span></span>
+        </div>
+        <div class="vantage_text">
+            <p>
+                我们的优势，一切以您的满意为中心，人才主导业绩，秉承Danfoss的文化和行为是我们提供员工报酬与激励员工时不可或缺的一部分。我们拥有高质量、多元化的客户基础(主要包括行业内的领先公司、机构投资者及高净值个人)。我们与客户建立并保持长期合作,并致力为其提供全面的产品和服务。
+            </p>
+            <p>
+                我们的优势，一切以您的满意为中心，人才主导业绩，秉承Danfoss的文化和行为是我们提供员工报酬与激励员工时不可或缺的一部分。我们拥有高质量、多元化的客户基础(主要包括行业内的领先公司、机构投资者及高净值个人)。我们与客户建立并保持长期合作,并致力为其提供全面的产品和服务。
+            </p>
+        </div>
+    </div>
+    <p class="copyright">
+        Copyright © 2006-2015 品信互动 版权所有
+    </p>
+    
+</section>
+
+<section class="contact" style="display:none">
+    <p>一、商务合作</p>
+    <p>仅限于合作沟通用，加好友请注明您所在的公司和来意，谢谢！</p>
+    <p><strong>QQ:</strong><span>123456789</span></p>
+    <p><strong>微信:</strong><span>123456789</span></p>
+    <p>二、建议反馈</p>
+    <p>如果您对我们有任何的建议或者吐槽，请告诉我们！</p>
+
+</section>
+
+<section class="contact" style="display:none">
+    <p>一、PHP开发工程师</p>
+    <p>仅限于合作沟通用，加好友请注明您所在的公司和来意，谢谢！</p>
+    <p><strong>QQ:</strong><span>123456789</span></p>
+    <p><strong>微信:</strong><span>123456789</span></p>
+    <p>二、前端开发工程师</p>
+    <p>如果您对我们有任何的建议或者吐槽，请告诉我们！</p>
+    <p>三、UI设计师</p>
+    <p>如果您对我们有任何的建议或者吐槽，请告诉我们！</p>
+
+</section>
+
+<div class="homePage">
+    <a href="javascript:;">返回首页</a>
+</div>
+
+<script src="js/zepto.js" type="text/javascript"></script>
+<script type="text/javascript">
+    fn();
+    window.addEventListener("resize",fn);
+    function fn() {
+        var html = document.querySelector("html");
+        var width = html.getBoundingClientRect().width;
+        html.style.fontSize = width/16 + "px"; //得出来的结果不能小于12 
+    }
+
+var navHeight = $('.nav').height();
+var homePageHeight = $('.homePage').height();
+var n = 0;
+for(var i=0;i<$('section').length;i++){
+    if($('section').eq(i).css('display') === 'block'){
+         n = i;
+    }
+}
+var section = $('section').eq(n).height();
+
+if($(window).height()>(navHeight+homePageHeight+section)){
+    $('section').eq(n).css('height',$(window).height()-nav-homePage);
+}
+
+var nav = $('.nav ul li a');
+var sec = $('section');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+for(var i=0;i<nav.length;i++){
+    nav[i].index = i;
+    $('.nav li a').eq(i).click(function(){
+        for(var i=0;i<sec.length;i++){
+            sec.css('display','none');
+        }
+        $('section').eq(this.index).css('display','block');
+
+    })
+}
+
+</script>
+
+</body>
+</html>

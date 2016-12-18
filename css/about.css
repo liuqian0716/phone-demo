@@ -1,0 +1,116 @@
+/* 
+* @Author: anchen
+* @Date:   2016-12-11 10:33:45
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-12-17 13:47:06
+*/
+
+body{background:#eeeeee;}
+
+.nav li a{display:block;color:#363635;float:left;font-size:15px;}
+.nav{height:2.133rem;width:100%;background:#fff;position:absolute;top:0;left:0;}
+.nav li a{
+    width:5.333rem;
+    text-align:center;
+    line-height:2.133rem;
+    border-top:1px solid #d3d1d1;
+    border-bottom:1px solid #d3d1d1;
+    border-left:1px solid #d3d1d1;
+    box-sizing: border-box;
+}
+.nav li:nth-child(3) a{border-right:none;}
+.introduce .banner{
+    width:100%;
+    height:6.666rem;
+    background:url(../images/关于我们_02.jpg) no-repeat;
+    background-size:cover;
+}
+
+.introduce .introduce_head{
+    position:relative;
+    width:100%;
+    height:1.2rem;
+    background:#88c545;
+    font-size: 15px;
+    line-height:1.2rem;
+    color:#fff;
+    padding-left: 0.666rem;
+    box-sizing: border-box;
+}
+.introduce_head span{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color:  #fff transparent transparent transparent;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -4px;
+    margin-right: .666rem;
+}
+.introduce_content{
+    width:15.111rem;
+    background:#fff;
+    margin:0 auto;
+}
+.introduce_content img{
+    display:block;
+    width:13.288rem;
+    height:2rem;
+    margin:0 auto;
+    padding-bottom:1.022rem;
+}
+.introduce_content img:first-child{padding-top:1.111rem;}
+.introduce .vantage{
+    width: 15.111rem;
+    background: #fff;
+    margin: 0 auto;
+}
+.introduce .vantage .vantage_text{color:#ababab;font-size:13px;line-height: 20px;text-indent:26px;text-align:justify;white-space:normal;padding:15px 15px 13px 15px;}
+.introduce .copyright{
+    width: 100%;
+    height: 1.244rem;
+    line-height: 1.244rem;
+    font-size: 13px;
+    color: #bcbcbc;
+    text-align: center;
+    padding-top: 0.4rem;
+}
+.homePage {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:2.222rem;
+    line-height:2.222rem;
+    background:#027a9b;
+    color:#fff;
+    text-align:center;
+    font-size:17px;
+}
+.homePage a{color:#fff;}
+
+section{
+    position: absolute;
+    width: 100%;
+    top: 2.133rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.contact{padding: 0 16px;background: #fff;}
+.contact p{font-size: 13px;line-height:23px;;}
+.contact p:first-child,.contact p:nth-child(5){
+    font-weight:bold;
+    font-size:15px;
+    line-height:3.288rem;
+}
+.contact p:nth-child(2){
+    margin-bottom:25px;
+}
+.contact p span{color:#00b050;}

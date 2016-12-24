@@ -76,7 +76,7 @@
 </section>
 
 <div class="homePage">
-    <a href="javascript:;">返回首页</a>
+    <a href="index.html">返回首页</a>
 </div>
 
 <script src="js/zepto.js" type="text/javascript"></script>
@@ -101,6 +101,9 @@ var section = $('section').eq(n).height();
 
 if($(window).height()>(navHeight+homePageHeight+section)){
     $('section').eq(n).css('height',$(window).height()-nav-homePage);
+}else{
+    //为了可以显示完全
+    $('section').eq(n).css('paddingBottom',homePageHeight+'px');
 }
 
 var nav = $('.nav ul li a');

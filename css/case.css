@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2016-12-22 19:53:37
 * @Last Modified by:   anchen
-* @Last Modified time: 2016-12-23 21:07:59
+* @Last Modified time: 2016-12-29 10:41:53
 */
 body{background:#eeeeee;}
 
@@ -66,7 +66,7 @@ body{background:#eeeeee;}
     /*background: #f7b32a;*/
     display:flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 .contentTop_right .proContent img{
     width:1.444rem;
@@ -96,13 +96,6 @@ body{background:#eeeeee;}
     text-align:center;
 }
 .product{position:relative;}
-.proContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -.722rem;
-    margin-left: -2.232rem;
-}
 
 .homePage {
     position:absolute;

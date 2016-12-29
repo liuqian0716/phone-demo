@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2016-12-23 21:17:01
 * @Last Modified by:   anchen
-* @Last Modified time: 2016-12-23 22:57:08
+* @Last Modified time: 2016-12-29 22:47:36
 */
 /* 
 * @Author: anchen
@@ -40,12 +40,13 @@ body{background:#eeeeee;}
     height: 7.022rem;
     display:flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     /*background: #fea500;*/
 }
 .commerceLeft .commerce img,.commerceBottom .marketing img{
     width:2.622rem;
     height:2.622rem;
+    margin-bottom: .711rem;
 }
 
 .commerceLeft .commerce{
@@ -62,7 +63,7 @@ body{background:#eeeeee;}
     height:3.422rem;
     display:flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 .mark{
     height:7.022rem;
@@ -89,9 +90,9 @@ body{background:#eeeeee;}
     /*background: #f7b32a;*/
     display:flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
-.contentTop_right .proContent img{
+.proContent img{
     width:1.444rem;
     height:1.444rem;
     vertical-align: middle;
@@ -100,6 +101,7 @@ body{background:#eeeeee;}
 
 .contentTop .center{width:.2rem;height:100%;}
 .contentTop_right a:nth-child(2){margin-top:.2rem;}
+.contentTop_left a:nth-child(2){margin-top:.2rem;}
 .contentTop{
     width:15.1332rem;
     margin:0 auto;
